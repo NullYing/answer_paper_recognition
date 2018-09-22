@@ -1,11 +1,6 @@
 import os
 import sys
-
-cur_path = os.path.abspath(__file__)
-parent = os.path.dirname
-sys.path.append(parent(parent(cur_path)))
-
-from server.image_processing.scan import AnswerScan
+from core.scan import AnswerScan
 
 
 if __name__ == '__main__':
